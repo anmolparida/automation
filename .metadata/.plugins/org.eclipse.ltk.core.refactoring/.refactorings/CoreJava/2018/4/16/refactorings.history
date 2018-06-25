@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Q1.java&apos; to &apos;Selenium/src/FrameworkDesign&apos;&#x0A;- Original project: &apos;CoreJava&apos;&#x0A;- Destination element: &apos;Selenium/src/FrameworkDesign&apos;&#x0A;- Original element: &apos;MicrosoftExcel.Q1.java&apos;" description="Copy compilation unit" destination="=Selenium/src&lt;FrameworkDesign" element1="/src&lt;MicrosoftExcel{Q1.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1524313042050" units="1" version="1.0"/>
+</session>

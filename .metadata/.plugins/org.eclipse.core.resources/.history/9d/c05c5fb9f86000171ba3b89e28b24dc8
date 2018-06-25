@@ -1,0 +1,14 @@
+package Methods_And_Classes;
+
+public class CallByReference_Test {
+	
+	CallByReference cbr = new CallByReference(15,20);
+	
+	
+	
+	
+	/*System.out.println("a and b before call: "+ cbr.a + ","+ cbr.b);
+	cbr.meth(a, b);
+	System.out.println("a and b after call: "+ cbr.a + ","+ cbr.b);
+/*/
+}

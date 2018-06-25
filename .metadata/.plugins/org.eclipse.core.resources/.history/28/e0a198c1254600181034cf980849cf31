@@ -1,0 +1,21 @@
+package FrameworkDesign;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+public class TakeScreenshot {
+	
+	public static void takeScreeshot(String fieldXpath, String val, String param3, String param4){
+		
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); // gets stored into a source file, then convert it to .jpeg or.png
+		
+		FileUtils.copyFile(src, new File("/Users/AnmolParida/Eclipse_Java/test.png"));
+		
+	}
+	
+	
+
+}

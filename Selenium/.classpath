@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Softwares/Selenium/selenium-server-standalone-3.11.0.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/Cucumber/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/Cucumber/gherkin-4.1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/Cucumber/cucumber-jvm-deps-1.0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/Cucumber/cucumber-junit-2.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/Cucumber/cucumber-java-2.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/Cucumber/cucumber-core-2.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/Cucumber/cobertura-2.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/Cucumber/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/Cucumber/cucumber-reporting-3.9.0.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="/Users/AnmolParida/Coding/Java/Jar Files/poi-3.9.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,32 @@
+package Cucumber;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+
+public class TestCase01 {
+	WebDriver driver ;
+	System.setProperty("webdriver.chrome.driver", "/Users/AnmolParida/Softwares/Selenium/chromedriver");
+	
+	@Given ("the amazon website is open in chrome ")
+	
+	public void environmentSetup(){
+		
+		
+		System.out.println("the amazon website is open in chrome ");
+		System.setProperty("webdriver.chrome.driver", "/Users/AnmolParida/Softwares/Selenium/chromedriver");
+
+		driver = new ChromeDriver();
+		driver.get("https://www.amazon.in/");
+	}
+	
+	@Given ("the wondow is maximized")
+	public void searchBox(){
+		System.out.println("the wondow is maximized");
+		driver.manage().window().maximize();
+		
+	}
+
+}

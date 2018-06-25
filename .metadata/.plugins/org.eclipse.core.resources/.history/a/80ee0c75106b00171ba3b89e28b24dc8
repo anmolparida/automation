@@ -1,0 +1,32 @@
+package Methods_And_Classes;
+
+import java.util.Scanner;
+
+public class Demo {
+
+	   public static void main(String args[]) {
+	      
+	      //String Str3 = "Welcome to Tutorialspoint.com";
+	      //System.out.println("String3 Length :" + Str3.length());
+	      
+	      String stringToReverse;
+	      Scanner reader = new Scanner(System.in);  // Reading from System.in
+	      System.out.println("Enter String to Reverse: ");
+	      stringToReverse = reader.next();
+	      
+	      String reversedString = "";
+	      int stringLength = stringToReverse.length();
+	      //reversedString.substring(beginIndex, endIndex)
+	      
+	      
+	      for (int i=stringLength ; i; i++) {
+	    	  reversedString = reversedString + stringToReverse.substring(i+0, i+1);
+	    	  System.out.println(reversedString);
+	      }
+	      System.out.println(reversedString);
+	      //System.out.println(stringToReverse.);
+	   
+	      }
+	}
+
+

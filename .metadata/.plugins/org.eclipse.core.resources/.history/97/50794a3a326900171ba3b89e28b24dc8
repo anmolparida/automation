@@ -1,0 +1,17 @@
+package Methods_And_Classes;
+
+public class Demo {
+
+	   public static void main(String args[]) {
+	      String Str1 = new String("Welcome to Tutorialspoint.com");
+	      String Str2 = new String("Tutorials" );
+	      
+	      String Str3 = "Welcome to Tutorialspoint.com";
+	      String Str4 = "Welcome" ;
+	      
+	      System.out.println("String3 Length :" + Str3.length());
+	      System.out.println("String3 Length :" + Str4.length());
+	      }
+	}
+
+

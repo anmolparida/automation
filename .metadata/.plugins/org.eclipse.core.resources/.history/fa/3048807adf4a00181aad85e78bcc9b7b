@@ -1,0 +1,51 @@
+package Cucumber;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+
+public class TestCase01 {
+	
+	WebDriver driver =  new ChromeDriver();
+	
+	@Given ("the amazon website is open in chrome")
+
+	public void environmentSetup(){
+		
+		System.setProperty("webdriver.chrome.driver", "/Users/AnmolParida/Softwares/Selenium/chromedriver");
+		driver.get("https://www.amazon.in/");
+		System.out.println("the amazon website is open in chrome");
+	}
+
+	@Given ("the wondow is maximized")
+	public void maximizeBrowserWindow(){
+
+		driver.manage().window().maximize();
+		System.out.println("the wondow is maximized");
+	}
+	
+	@Given ("When user enters laptops in serach box")
+	public void searchBox(){
+		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("laptops");
+		System.out.println("When user enters laptops in serach box");
+	}
+	
+	@Given ("And hits the search button")
+	public void clickSearchButton(){
+		driver.findElement(By.xpath("//input[@type='submit' and @value='Go']")).click();
+		System.out.println("And hits the search button");
+	}
+	@Given ("Then list of laptops of pop up")
+	public void showResult(){
+		System.out.println("Info: Then list of laptops of pop up");
+	}
+
+	@Given ("And how many lenovo laptops come in search")
+	public void resultCount(){
+		
+		System.out.println("And how many lenovo laptops come in search");
+	}
+
+}

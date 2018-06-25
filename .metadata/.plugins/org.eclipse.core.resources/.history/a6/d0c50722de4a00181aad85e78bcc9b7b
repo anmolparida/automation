@@ -1,0 +1,5 @@
+package CucumberOptions.api.junit;
+
+public @interface cucumber {
+
+}

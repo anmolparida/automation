@@ -1,0 +1,37 @@
+package FrameworkDesign;
+
+
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Execution {
+
+
+	public static void main (String[] args) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, IOException{
+		
+		//InstructionLibrary.OpenBrowser("chrome", "http://newtours.demoaut.com/");
+		//InstructionLibrary.EnterText("name", "username", "batman");
+		//InstructionLibrary.EnterText("name", "password", "batman");
+
+
+		//InstructionLibrary.controller("OpenBrowser", "chrome", "http://newtours.demoaut.com/");
+		//InstructionLibrary.controller("EnterText", "//input[@name='userName']", "batman");
+		//InstructionLibrary.controller("EnterText", "//input[@name='password']", "batman");
+		//InstructionLibrary.controller("ClickButton", "//input[@name='login']", "null");
+
+		String result;
+	
+		ExcelCommunication obj = new ExcelCommunication();
+		HashMap<Integer, ArrayList<String>> tempmap = obj.readExcel();
+
+		for(int i = 0; i < tempmap.size(); i++){
+			ArrayList<String> templist = tempmap.get(i);	
+			InstructionLibrary.controller(templist.get(0).trim(), templist.get(1).trim(), templist.get(2).trim(), templist.get(3).trim(), templist.get(4).trim());
+		}
+
+	}
+}
+

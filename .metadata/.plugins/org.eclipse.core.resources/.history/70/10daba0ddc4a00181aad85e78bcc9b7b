@@ -1,0 +1,20 @@
+package Cucumber;
+
+import cucumber.api.java.en.Given;
+
+public class TestCase01 {
+	
+	
+	@Given ("the amazon website is open in chrome ")
+	
+	public void environmentSetup(){
+		System.out.println("the amazon website is open in chrome ");
+	}
+	
+	@Given ("the wondow is maximized")
+	public void searchBox(){
+		System.out.println("the wondow is maximized");
+		
+	}
+
+}

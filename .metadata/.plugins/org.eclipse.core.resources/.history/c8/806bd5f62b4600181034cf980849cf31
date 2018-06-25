@@ -1,0 +1,31 @@
+package FrameworkDesign;
+
+import java.io.File;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+public class TakeScreenshot {
+
+	public static void takeScreeshot(String fieldXpath, String val, String param3, String param4){
+
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); // gets stored into a source file, then convert it to .jpeg or.png
+
+		Date date = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("MM_dd_yyyy_hh_m_ss");
+		String formattedDate = sdf.format(date);
+		System.out.println(formattedDate); 
+
+
+
+		FileUtils.copyFile(src, new File("/Users/AnmolParida/Eclipse_Java/" +formattedDate +".png"));
+
+	}
+
+
+
+}
